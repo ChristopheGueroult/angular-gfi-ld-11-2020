@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "crm-gfi-nov"
+  "defaultProject": "crm-gfi-nov",
+  "cli": {
+    "analytics": "2d04e7f0-833f-49d4-b434-bcabb885c736"
+  }
 }
