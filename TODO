@@ -2,8 +2,8 @@
 ✔ Vous devez avoir PageNotFoundRoutingModule (--routing) @done(20-11-16 15:33)
 ✔ Créer PageNotFoundComponent (page) @done(20-11-16 15:33)
 
-☐ Finir UiComponent
-☐ encapsutaion et mode emulated
+✔ Finir UiComponent @done(20-11-17 10:30)
+✔ encapsutaion et mode emulated @done(20-11-17 11:00)
 ☐ WebPack Bundle Analyzer
 ☐ Compodoc
 
