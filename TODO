@@ -9,7 +9,7 @@
 ✔ interpolation @done(20-11-17 14:14)
 ✔ lifecycles @done(20-11-17 14:14)
 
-☐ Input()
+✔ Input() @done(20-11-17 14:16)
 ☐ router init config
 ☐ add routes after lazy loading
 ☐ datas dans router
@@ -17,7 +17,7 @@
 ☐ changeDetectionStrategy
 
 
-youssef.el-farissi@gfi.world 101
+youssef.el-farissi@gfi.world 111
 josselin.bernede@gfi.fr 111
 mathieu.colin@gfi.fr 101
 fabien.sanson@gfi.fr 111
