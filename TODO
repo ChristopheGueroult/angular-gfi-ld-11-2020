@@ -4,14 +4,24 @@
 
 ✔ Finir UiComponent @done(20-11-17 10:30)
 ✔ encapsutaion et mode emulated @done(20-11-17 11:00)
-☐ WebPack Bundle Analyzer
-☐ Compodoc
+✔ WebPack Bundle Analyzer @done(20-11-17 13:06)
+✔ Compodoc @done(20-11-17 13:06)
+✔ interpolation @done(20-11-17 14:14)
+✔ lifecycles @done(20-11-17 14:14)
 
-youssef.el-farissi@gfi.world
-josselin.bernede@gfi.fr
-mathieu.colin@gfi.fr
-fabien.sanson@gfi.fr
-arthur.gerey@gfi.fr
-kevin.cefis@gfi.fr
-ghazi.chaari@gfi.fr
-kevin.malleret@gfi.fr
+☐ Input()
+☐ router init config
+☐ add routes after lazy loading
+☐ datas dans router
+
+☐ changeDetectionStrategy
+
+
+youssef.el-farissi@gfi.world 101
+josselin.bernede@gfi.fr 111
+mathieu.colin@gfi.fr 101
+fabien.sanson@gfi.fr 111
+arthur.gerey@gfi.fr 111
+kevin.cefis@gfi.fr 111
+ghazi.chaari@gfi.fr 111
+kevin.malleret@gfi.fr 111
