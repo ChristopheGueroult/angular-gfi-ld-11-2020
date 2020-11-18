@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "doc": "compodoc -p tsconfig.json -o -s",
-    "analyze": "ng build --prod --stats-json && webpack-bundle-analyzer dist/crm-gfi-nov/stats.json"
+    "analyze": "ng build --prod --stats-json && webpack-bundle-analyzer dist/crm-gfi-nov/stats.json",
+    "jsonServer": "json-server --watch src/mock_db/db.json"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +48,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",

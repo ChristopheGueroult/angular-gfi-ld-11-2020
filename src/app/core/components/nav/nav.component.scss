@@ -1,0 +1,8 @@
+a {
+  color: var(--app-dark);
+  &.active, &:hover {
+    color: var(--app-secondary);
+  }
+}
+
+

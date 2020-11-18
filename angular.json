@@ -122,6 +122,46 @@
           }
         }
       }
+    },
+    "TemplatesGfi": {
+      "projectType": "library",
+      "root": "projects/templates-gfi",
+      "sourceRoot": "projects/templates-gfi/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/templates-gfi/tsconfig.lib.json",
+            "project": "projects/templates-gfi/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/templates-gfi/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/templates-gfi/src/test.ts",
+            "tsConfig": "projects/templates-gfi/tsconfig.spec.json",
+            "karmaConfig": "projects/templates-gfi/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/templates-gfi/tsconfig.lib.json",
+              "projects/templates-gfi/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "crm-gfi-nov",
