@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { OrdersService } from './core/services/orders.service';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import '@angular/common/locales/global/fr';
 
 
 
@@ -16,9 +15,10 @@ import { OrdersService } from './core/services/orders.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'fr' }, {provide: DEFAULT_CURRENCY_CODE, useValue: 'EUR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
