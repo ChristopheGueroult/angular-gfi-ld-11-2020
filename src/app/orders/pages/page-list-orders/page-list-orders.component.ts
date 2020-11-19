@@ -30,6 +30,7 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
       console.log(data);
     });
     this.listHeaders = [
+      'Action',
       'Type',
       'Client',
       'NbJours',
@@ -54,6 +55,11 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
       item.state = res.state;
       this.cd.detectChanges();
     });
+  }
+
+  public openPopUp(): void {
+    console.log('open popup');
+
   }
 
   ngOnDestroy(): void {

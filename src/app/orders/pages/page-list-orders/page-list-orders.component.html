@@ -1,4 +1,4 @@
-<app-template-full-width *ngIf="collection$ | async as collection">
+<app-template-full-width [secondaryBgColor]="true" *ngIf="collection$ | async as collection">
   <h1 class="title">All Orders</h1>
   <!-- {{ collection | json }} -->
   <app-tableau-light  [headers]="listHeaders">
@@ -22,6 +22,6 @@
 
   <app-button href="http://www.google.fr" label="Go to Google"></app-button>
   <app-button route="add" label="Add an order"></app-button>
-  <app-button [action]="true" label="Open a popup"></app-button>
+  <app-button [action]="true" label="Open a popup" (clicked)="openPopUp()"></app-button>
 
 </app-template-full-width>

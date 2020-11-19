@@ -26,13 +26,17 @@ tp client :
   ☐ pageListClients (ex pageListOrders) nom, total HT, tva, total TTC, state
     ☐ utilisez tableau light ou tableau dark
     ☐ utilisez la meme directive que pour les orders (state-active, state-inactive)
-    ☐ utlisez le meme pipe total pour afficher le total ttc 
+    ☐ utlisez le meme pipe total pour afficher le total ttc
 
-youssef.el-farissi@gfi.world 101
-josselin.bernede@gfi.fr 111
-mathieu.colin@gfi.fr 111
-fabien.sanson@gfi.fr 111
-arthur.gerey@gfi.fr 111
-kevin.cefis@gfi.fr 111
-ghazi.chaari@gfi.fr 111
-kevin.malleret@gfi.fr 101
+✔ @Output() @done(20-11-19 15:08)
+
+mathieu.colin@gfi.fr
+josselin.bernede@gfi.fr
+youssef.el-farissi@gfi.world
+fabien.sanson@gfi.fr
+arthur.gerey@gfi.fr
+kevin.cefis@gfi.fr
+ghazi.chaari@gfi.fr
+kevin.malleret@gfi.fr
+
+retrouver debug vscode typescript

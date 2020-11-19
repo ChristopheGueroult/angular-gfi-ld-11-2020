@@ -10,3 +10,9 @@
     margin-bottom: 0;
   }
 }
+
+.secondary {
+  .bandeau {
+    background: var(--app-secondary);
+  }
+}

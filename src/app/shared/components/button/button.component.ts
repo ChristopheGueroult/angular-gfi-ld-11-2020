@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 /**
  * redirect with href
@@ -15,13 +15,14 @@ export class ButtonComponent implements OnInit {
   @Input() href: string;
   @Input() route: string;
   @Input() action: boolean;
+  @Output() clicked: EventEmitter<any> = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
   public doAction(): void {
-    console.log('btn clicked');
+    this.clicked.emit();
   }
 
 }
