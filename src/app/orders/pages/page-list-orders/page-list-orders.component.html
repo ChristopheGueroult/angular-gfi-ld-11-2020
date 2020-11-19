@@ -1,4 +1,4 @@
-<app-template-full-width *ngIf="collection">
+<app-template-full-width *ngIf="collection$ | async as collection">
   <h1 class="title">All Orders</h1>
   <!-- {{ collection | json }} -->
   <app-tableau-light  [headers]="listHeaders">

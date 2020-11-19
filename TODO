@@ -14,8 +14,9 @@
 ✔ add routes after lazy loading @done(20-11-18 08:07)
 ✔ datas dans router @done(20-11-18 08:07)
 
+✔ directive perso @done(20-11-19 10:22)
 ☐ pipe async et unsubscribe
-☐ tableau dark 
+☐ tableau dark
 ☐ changeDetectionStrategy
 
 
