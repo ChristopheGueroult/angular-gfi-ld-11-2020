@@ -15,16 +15,24 @@
 ✔ datas dans router @done(20-11-18 08:07)
 
 ✔ directive perso @done(20-11-19 10:22)
-☐ pipe async et unsubscribe
-☐ tableau dark
-☐ changeDetectionStrategy
+✔ pipe async et unsubscribe @done(20-11-19 11:09)
+✔ tableau dark @done(20-11-19 12:43)
+✔ changeDetectionStrategy @done(20-11-19 11:09)
 
+tp client :
+  ☐ enum ACTIVE INACTIVE
+  ☐ interface et model (db.json)
+  ☐ clientsService (ex OrdersService)
+  ☐ pageListClients (ex pageListOrders) nom, total HT, tva, total TTC, state
+    ☐ utilisez tableau light ou tableau dark
+    ☐ utilisez la meme directive que pour les orders (state-active, state-inactive)
+    ☐ utlisez le meme pipe total pour afficher le total ttc 
 
 youssef.el-farissi@gfi.world 101
-josselin.bernede@gfi.fr 211
-mathieu.colin@gfi.fr 211
-fabien.sanson@gfi.fr 211
-arthur.gerey@gfi.fr 211
-kevin.cefis@gfi.fr 211
+josselin.bernede@gfi.fr 111
+mathieu.colin@gfi.fr 111
+fabien.sanson@gfi.fr 111
+arthur.gerey@gfi.fr 111
+kevin.cefis@gfi.fr 111
 ghazi.chaari@gfi.fr 111
-kevin.malleret@gfi.fr 211
+kevin.malleret@gfi.fr 101

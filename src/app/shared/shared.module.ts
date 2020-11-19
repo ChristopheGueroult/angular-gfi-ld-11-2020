@@ -8,11 +8,12 @@ import { RouterModule } from '@angular/router';
 import { TotalPipe } from './pipes/total.pipe';
 import { StateDirective } from './directives/state.directive';
 import { TestDirective } from './directives/test.directive';
+import { TableauDarkComponent } from './components/tableau-dark/tableau-dark.component';
 
 
 
 @NgModule({
-  declarations: [TableauLightComponent, ButtonComponent, TotalPipe, StateDirective, TestDirective],
+  declarations: [TableauLightComponent, ButtonComponent, TotalPipe, StateDirective, TestDirective, TableauDarkComponent],
   imports: [
     CommonModule,
     RouterModule
@@ -24,7 +25,8 @@ import { TestDirective } from './directives/test.directive';
     ButtonComponent,
     TotalPipe,
     StateDirective,
-    TestDirective
+    TestDirective,
+    TableauDarkComponent
   ]
 })
 export class SharedModule { }
