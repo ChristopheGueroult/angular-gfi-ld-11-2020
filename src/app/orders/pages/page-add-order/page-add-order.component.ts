@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Order } from 'src/app/core/models/order';
 
 @Component({
   selector: 'app-page-add-order',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-add-order.component.scss']
 })
 export class PageAddOrderComponent implements OnInit {
-
-  constructor() { }
+  public title: string;
+  public item = new Order();
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.data.subscribe((datas) => {
+      this.title = datas.title;
+    });
   }
 
 }

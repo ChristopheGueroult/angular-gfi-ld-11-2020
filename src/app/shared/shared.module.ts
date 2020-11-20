@@ -9,18 +9,20 @@ import { TotalPipe } from './pipes/total.pipe';
 import { StateDirective } from './directives/state.directive';
 import { TestDirective } from './directives/test.directive';
 import { TableauDarkComponent } from './components/tableau-dark/tableau-dark.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [TableauLightComponent, ButtonComponent, TotalPipe, StateDirective, TestDirective, TableauDarkComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     TemplatesModule,
     IconsModule,
+    ReactiveFormsModule,
     TableauLightComponent,
     ButtonComponent,
     TotalPipe,
