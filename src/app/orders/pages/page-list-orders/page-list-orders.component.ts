@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { OrdersService } from 'src/app/core/services/orders.service';
 import { Order } from 'src/app/core/models/order';
 import { StateOrder } from 'src/app/core/enums/state-order.enum';
@@ -22,7 +22,8 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private os: OrdersService,
-    private cd: ChangeDetectorRef
+    private cd: ChangeDetectorRef,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -67,6 +68,10 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
         this.collection$.next(datas);
       });
     });
+  }
+
+  goToEdit(item: Order): void {
+    this.router.navigate(['orders', 'edit', item.id]);
   }
 
   ngOnDestroy(): void {

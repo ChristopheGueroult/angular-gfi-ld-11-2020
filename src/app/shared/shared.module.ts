@@ -10,6 +10,7 @@ import { StateDirective } from './directives/state.directive';
 import { TestDirective } from './directives/test.directive';
 import { TableauDarkComponent } from './components/tableau-dark/tableau-dark.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TextsModule } from '../texts/texts.module';
 
 
 @NgModule({
@@ -17,12 +18,14 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TextsModule
   ],
   exports: [
     TemplatesModule,
     IconsModule,
     ReactiveFormsModule,
+    TextsModule,
     TableauLightComponent,
     ButtonComponent,
     TotalPipe,

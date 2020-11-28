@@ -1,11 +1,13 @@
 <app-template-full-width [secondaryBgColor]="true" *ngIf="collection$ | async as collection">
-  <h1 class="title">All Orders</h1>
+  <app-txt-bandeau class="title">
+    <h1>All Orders</h1>
+  </app-txt-bandeau>
   <!-- {{ collection | json }} -->
   <app-tableau-light  [headers]="listHeaders">
     <tr *ngFor="let item of collection">
       <td>
         <app-icon-delete (click)="delete(item)"></app-icon-delete>
-        <app-icon-edit></app-icon-edit>
+        <app-icon-edit (click)="goToEdit(item)"></app-icon-edit>
       </td>
       <td>{{ item.typePresta  }}</td>
       <td>{{ item.client }}</td>
@@ -28,4 +30,7 @@
   <app-button route="add" label="Add an order"></app-button>
   <app-button [action]="true" label="Open a popup" (clicked)="openPopUp()"></app-button>
 
+  <app-txt-page>
+    <h1>one title</h1>
+  </app-txt-page>
 </app-template-full-width>

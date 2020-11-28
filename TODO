@@ -28,6 +28,27 @@ tp client :
     ☐ utilisez la meme directive que pour les orders (state-active, state-inactive)
     ☐ utlisez le meme pipe total pour afficher le total ttc
 
+tp edit order :
+Partie edit order
+☐ page list order html
+  ☐ afficher une colone supp (action) avec un icon edit devant chaque ligne (td)
+  ☐ click sur icon edit => goToEdit(item)
+☐ page list order ts
+  ☐ coder fn goToEdit(item: Order) => redirection dans le ts vers la route orders/edit/1 (si id 1)
+☐ orders routing ts
+  ☐ route edit qui autorise un paramètre id dans l'url
+☐ page edit order ts
+  ☐ récupérer l'id dans l'url (static ou subscribe ? i : ActivatedRoute)
+  ☐ appeler this.os.getItemById(id) et faire le subscribe
+  ☐ dans le subscribe on récupère la res de l'api (l'item qui correspond à l'id) et on initialise une propriété item avec cet obj
+☐ page edit order html
+  ☐ afficher form order component et on bind l'input init avec item quand il a une valeur
+  ☐ l'output submited appel une fn edit($event)
+☐ page edit order ts
+  ☐ code la fn edit(item: Order) => this.os.update(item).subscribe()
+  ☐ dans le subscribe, on redirige l'utilisateur vers la route orders
+
+
 ✔ @Output() @done(20-11-19 15:08)
 
 ☐ formulaires et validation de formulaires
@@ -36,13 +57,23 @@ tp client :
 ☐ exemples tu avec jest (private github access)
 ☐ atelier jusqu'à 15h30
 
-mathieu.colin@gfi.fr 111
-josselin.bernede@gfi.fr 111
+mathieu.colin@gfi.fr
+josselin.bernede@gfi.fr
 youssef.el-farissi@gfi.world
-fabien.sanson@gfi.fr 111
-arthur.gerey@gfi.fr 111
-kevin.cefis@gfi.fr 111
-ghazi.chaari@gfi.fr 111
-kevin.malleret@gfi.fr 111
+fabien.sanson@gfi.fr
+arthur.gerey@gfi.fr
+kevin.cefis@gfi.fr
+ghazi.chaari@gfi.fr
+kevin.malleret@gfi.fr
+
+arthur.gerey@gmail.com
+josselin.bernede@gmail.com
+k.cefis@gmail.com
+kevin.malleret03@gmail.com
+mathieu.colin52@gmail.com
+Ghazi.chaari1@gmail.com
+fabien.sanson.tsv@gmail.com
+
 
 retrouver debug vscode typescript
+SI20-003041
